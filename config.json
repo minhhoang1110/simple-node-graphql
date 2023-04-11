@@ -1,0 +1,28 @@
+{
+  "app": {
+    "region": "asia-southeast1"
+  },
+  "firebase": {
+    "serviceAccount": {
+        "type": "service_account",
+        "project_id": "books-grapql",
+        "private_key_id": "3b9664f7e60f636a74000a73eb7125f8fd4e7062",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDN8babNzSOuLis\nPfDzHbEzFrB+rvTvIQzwwbDC2PyP53Ia81oiu1wkaw7ey6nneUiV5p3RFt58AvSr\nypu6nANuPvEDkgj4No3MPjfM7aOGpXk59QOuYHEmFzmn6jI/difsv7LUn4MS70o1\n7gpW+z/4AEfXh4+WrOpHIGZV7zir4RKvIzb3ScDvSNwVVyYrqt6/z7Hp17LSY/H1\njOByg1Zbur9E9UwO2oe+MHmLaVL/olGP7FR4w1QI/2Ownc99DSx0bVWV3Peyw7mw\nlnwohoAgq/d2jA0lXawIrozXCoRCjFV/r/SonRJtDQYbdibDzpwliYObUKW+fYDu\n7dfPlphzAgMBAAECggEAAsWIAZrCmFEgGyFSRtNVeSyK/4l3PmihdfQFXvnwnDcv\nL/GqeuEuokbWkmUHSlg1g97wrMm0ANNBW7aEVgSXfzpVoAitGjoRunfz5EwmcT90\n3DTR8dzWaP7TBdF/D5+Vdfg2feoPp4eU5hjoBrem6r2GOf5XDl4RYResiOeJSbbd\njKsn1eASrM64nqNvwIQorh/3TwikaN9CkiPh8X7IZV2h2BU2/vhMYRrTjJb8HVtL\nOO0+mM2qUZHEuIFEzEPqA4AgEH/E2QZ4OLPhqRV2LsqxkDxwC4vomBbxm5biERl6\nrGH1ZM2EgOgj+DRZH7SWE/tMIf0HRMnPy3MkvtmqcQKBgQDsYZIwhXbUea4tyfHM\nl7JzRKdW5I8LthZt07/cpltSq40SUMuSZmM4Ak4UhQHAM7tsTV/C7fJD8tk0ZqJm\nNUkAnJlr9ybBfHk2AleOnsQ3bG9nqQKTRkDZBv807MQZ8CpI1zwEIDF8l+enaJKm\nnPBe7twYpY6HPQa+GXd1Ms0x5wKBgQDfCXGILVoFKlCLEekChFKhYpbQklv4hXgN\n4mUU0AJQRVvDrQjndr97cc+g/GGQYBnPt6yiXOGSVyPHTOM7jmFnzetCQUzAI+nK\nKUgcR0GgSSufyXkj9liTJviS+KUi7O1vYgdzgTCTYy5nTl7C5MaAYvoCrXB8BOxu\n4Dg3E6trlQKBgHp1kebRPd6Vq0bNeBcl/6z3xDmf7vuCOdxr9tm41VbeyRbUBKKz\nqHM7vnei8GVCZ7aT3yh9XSUWirA6+6c3s7o9Zr4oLEvQ0HrKe9HHLqAH7S8mv87M\ndov4s/4XKwDFCyLxXoZEp16E095GrrLiWyTTWfLq0gv98aBKUTjGOMfBAoGAJwH5\nzz1PTzP1Xj1FqWEHKp6ZjeTrHO4K7zK3RwqSPQPEZtauhfzoxGhFTfyV+7AzE3cm\nREdGVFfVNBgobdQbCRKkoLPW/ovJacgKipeTzLq/XHTaMQX2u9XHB71g9FjHtgFJ\nGFRx8HUaOoskW6WzaeTloO5AjBA4YbPpYQiZpHkCgYEAk0f5qUen9d9Jg9Qv2T37\nd3sfKsVM80wjVtuaEVw6jmXhdyt0Uh9Nlwewd57ara0YoC5rElF7x9zEcXhFZYKf\nWjPjX0EsYNiO+2wPSzwN3qO7Po6gL10u0vPRcruVwoRCP5ony0RHMbt/6+IDRr+4\nTh/7wRNG05MiecTJV7/J+fU=\n-----END PRIVATE KEY-----\n",
+        "client_email": "firebase-adminsdk-pbcv9@books-grapql.iam.gserviceaccount.com",
+        "client_id": "101805338540276643487",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-pbcv9%40books-grapql.iam.gserviceaccount.com"
+    },
+    "client": {
+      "apiKey": "AIzaSyCdi_O14-eiz84GKagahMtx7k6vVIZzXJ0",
+        "authDomain": "books-grapql.firebaseapp.com",
+        "projectId": "books-grapql",
+        "storageBucket": "books-grapql.appspot.com",
+        "messagingSenderId": "455906607376",
+        "appId": "1:455906607376:web:4597928854fb2c716b2595",
+        "measurementId": "G-J14SQHSM53"
+    }
+  }
+}
