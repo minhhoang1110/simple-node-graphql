@@ -1,19 +1,10 @@
 import express from 'express';
+import rootResolver from './resolvers';
+import { schema } from './schema';
 const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { graphqlHTTP } = require('express-graphql');
-const { buildSchema } = require('graphql');
-const schema = buildSchema(`
-  type Query {
-    book: String
-  }
-`);
-const root = {
-  book: () => {
-    return 'Hello world!';
-  }
-};
 app.use(
   cors({
     origin: '*'
@@ -29,7 +20,7 @@ app.use(
   '/graphql',
   graphqlHTTP({
     schema: schema,
-    rootValue: root,
+    rootValue: rootResolver,
     graphiql: true
   })
 );
