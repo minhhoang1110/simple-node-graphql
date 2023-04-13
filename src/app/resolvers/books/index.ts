@@ -1,8 +1,9 @@
-import { bookCollection } from '../../entities/books';
+import { Author } from '../../entities/authors';
+import { Book, bookCollection } from '../../entities/books';
 
 const getBooks = async () => {
   const snapshots = await bookCollection().get();
-  const books = snapshots.docs.map((snapshot) => snapshot.data());
+  const books: Book[] = snapshots.docs.map((snapshot) => snapshot.data());
   return books;
 };
 const getBookDetail = async (id: string) => {
@@ -10,13 +11,22 @@ const getBookDetail = async (id: string) => {
   if (!item.exists) {
     return undefined;
   }
-  const book = item.data();
+  const book: Book | undefined = item.data();
   return book;
 };
+const getBooksByAuthorId = async (authorId: string) => {
+  const snapshots = await bookCollection()
+    .where('authorId', '==', authorId)
+    .get();
+  const books: Book[] = snapshots.docs.map((snapshot) => snapshot.data());
+  return books;
+};
 export const booksResolver = {
-  books: getBooks(),
-  book: async (args: any) => {
-    const book = await getBookDetail(args.id as string);
-    return book;
-  }
+  books: async (parent: Author, args: any) => {
+    if (Object.entries(parent).length > 0) {
+      return await getBooksByAuthorId(parent.id || '');
+    }
+    return await getBooks();
+  },
+  book: async (parent: any, args: any) => await getBookDetail(args.id as string)
 };

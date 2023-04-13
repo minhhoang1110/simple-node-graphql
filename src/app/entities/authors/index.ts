@@ -6,15 +6,15 @@ import {
 import { instanceToPlain } from 'class-transformer';
 import { firestore } from '../../../firebase';
 
-export class Book {
+export class Author {
   public id?: string;
   public name: string;
-  public authorId: string;
+  public age: number;
 }
 
-const converter: FirestoreDataConverter<Book> = {
-  toFirestore(book: Book): DocumentData {
-    return instanceToPlain(book);
+const converter: FirestoreDataConverter<Author> = {
+  toFirestore(author: Author): DocumentData {
+    return instanceToPlain(author);
   },
   fromFirestore(snapshot: QueryDocumentSnapshot): any {
     const data = snapshot.data();
@@ -26,6 +26,6 @@ const converter: FirestoreDataConverter<Book> = {
   }
 };
 
-export const bookCollection = () => {
-  return firestore.collection('books').withConverter(converter);
+export const authorCollection = () => {
+  return firestore.collection('authors').withConverter(converter);
 };
