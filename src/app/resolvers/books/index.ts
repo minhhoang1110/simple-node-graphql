@@ -21,9 +21,15 @@ const getBooksByAuthorId = async (authorId: string) => {
   const books: Book[] = snapshots.docs.map((snapshot) => snapshot.data());
   return books;
 };
+export const CreateBook = async (data: any) => {
+  const { name, authorId } = data;
+  const item = await bookCollection().add({ name, authorId });
+  const book = await item.get();
+  return book.data();
+};
 export const booksResolver = {
   books: async (parent: Author, args: any) => {
-    if (Object.entries(parent).length > 0) {
+    if (parent && Object.entries(parent).length > 0) {
       return await getBooksByAuthorId(parent.id || '');
     }
     return await getBooks();

@@ -17,6 +17,10 @@ const schema = gql`
     authors: [Author]
     author(id: String): Author
   }
+  type Mutation {
+    CreateAuthor(name: String, age: Int): Author
+    CreateBook(name: String, authorId: String): Book
+  }
 `;
 
 export default schema;

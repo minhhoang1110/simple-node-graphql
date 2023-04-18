@@ -14,6 +14,12 @@ const getAuthorDetail = async (id: string) => {
   const author: Author | undefined = item.data();
   return author;
 };
+export const CreateAuthor = async (data: any) => {
+  const { name, age } = data;
+  const item = await authorCollection().add({ name, age });
+  const author = await item.get();
+  return author.data();
+};
 export const authorsResolver = {
   authors: async () => await getAuthors(),
   author: async (parent: Book, args: any) => {
